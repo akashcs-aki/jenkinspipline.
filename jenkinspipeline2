@@ -1,8 +1,8 @@
 pipeline{
  agent none
 stages{ 
-agent any 
 stage('buildstage'){
+agent any
 steps{
 echo "build process running"}}
 stage('testestage'){
