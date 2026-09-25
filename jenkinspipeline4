@@ -1,0 +1,21 @@
+pipeline{
+	agent any
+stages{
+stage('building stage'){
+environment {
+env_var="akash is working"}
+steps{
+echo "building ${env_var}"
+}}
+stage('testing stage'){
+environment {
+env_var="again akash is working"}
+steps{
+echo "testing ${env_var}"
+}}
+stage('deployment stage'){
+environment {
+env_var="gundya is hard worker"}
+steps{
+echo "deplyment ${env_var}"
+}}}}
