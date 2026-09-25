@@ -1,0 +1,14 @@
+pipeline{
+ agent none
+stages{ 
+agent any 
+stage('buildstage'){
+steps{
+echo "build process running"}}
+stage('testestage'){
+steps{
+echo "test process running"}}
+stage('deplyment'){
+steps{
+echo "deployement process running"
+}}}}
