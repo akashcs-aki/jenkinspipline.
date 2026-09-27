@@ -2,25 +2,6 @@ pipeline {
     agent any
 
     parameters {
-        string(
-            name: 'USERNAME',
-            defaultValue: 'Akash',
-            description: 'Enter your name'
-        )
-    }
-
-    stages {
-        stage('Display User') {
-            steps {
-                echo "Hello, ${params.USERNAME}"
-            }
-        }
-    }
-}
-pipeline {
-    agent any
-
-    parameters {
         choice(
             name: 'ENVIRONMENT',
             choices: ['DEV', 'QA', 'PROD'],
